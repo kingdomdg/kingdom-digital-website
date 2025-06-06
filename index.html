@@ -339,16 +339,12 @@
             margin-bottom: 0.5rem;
         }
 
-        .client-card .category {
+        .client-card .category,
+        .client-card .description {
             color: #667eea;
             font-size: 0.9rem;
-            font-weight: 600;
+            font-weight: 500;
             margin-bottom: 0.3rem;
-        }
-
-        .client-card .description {
-            color: #888;
-            font-size: 0.85rem;
         }
 
         /* 社群成果 */
@@ -411,7 +407,7 @@
 
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -433,25 +429,22 @@
             opacity: 0.9;
         }
 
-        /* 響應式設計 */
-                        .social-link {
-                    width: 150px;
-                    text-align: center;
-                    margin: 0.5rem 0;
-                }
-            }
+        /* 頁尾 */
+        .footer {
+            background: #1a252f;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-            @media (max-width: 768px) {
-                .cta-buttons {
-                    flex-direction: column;
-                    align-items: center;
-                }
-                
-                .cta-button {
-                    width: 200px;
-                    text-align: center;
-                }
-            }
+        .footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
@@ -480,6 +473,22 @@
 
             .container {
                 padding: 0 1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 200px;
+                text-align: center;
+            }
+
+            .social-link {
+                width: 150px;
+                text-align: center;
+                margin: 0.5rem 0;
             }
         }
 
@@ -516,9 +525,13 @@
             <h1>戰國數位</h1>
             <p class="subtitle">MAKE VALUE VISIBLE</p>
             <p class="tagline">讓影像成為企業說話的方式，讓每一幀畫面都值得被看見</p>
-           <div class="cta-buttons">
-    <a href="#contact" class="cta-button">開始合作</a>
-    <a href="https://drive.google.com/drive/folders/1sOeSWjnwp-cypHsc6vbGvFvPJW0R0Lau" class="cta-button cta-secondary" target="_blank">作品集</a>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button">開始合作</a>
+                <a href="https://drive.google.com/drive/folders/1sOeSWjnwp-cypHsc6vbGvFvPJW0R0Lau" class="cta-button cta-secondary" target="_blank">作品集</a>
+            </div>
+        </div>
+    </section>
+
     <!-- 關於我們 -->
     <section id="about" class="section about">
         <div class="container">
@@ -561,7 +574,7 @@
                 <div class="service-card fade-in">
                     <div class="service-icon">📱</div>
                     <h3>社群短影音</h3>
-                    <p>專屬IP包月製作、人設導向企劃、掌握時下流行趨勢。</p>
+                    <p>專屬IP包月製作、人設導向企劃、掌握時下流行趋勢。</p>
                 </div>
             </div>
         </div>
@@ -649,16 +662,28 @@
             </p>
             <div class="contact-info">
                 <div class="contact-card fade-in">
-                    <h4>📪 Email</h4>
+                    <h4>Email</h4>
                     <p>kingdomdg2022@gmail.com</p>
                 </div>
                 <div class="contact-card fade-in">
-                    <h4> Line ID</h4>
+                    <h4>Line ID</h4>
                     <p>0981850551 (陳經理)</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <h4>公司地址</h4>
+                    <p>臺北市信義區基隆路1段111號7樓</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 戰國數位資訊有限公司 版權所有</p>
+            <p>統一編號：90265467</p>
+        </div>
+    </footer>
 
     <script>
         // 滾動動畫效果
